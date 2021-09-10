@@ -3,3 +3,4 @@ C:\Users\User\source\repos\Proyecto_final_Pokedex\Modelo\bin\Debug\Modelo.pdb
 C:\Users\User\source\repos\Proyecto_final_Pokedex\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\Proyecto_final_Pokedex\Modelo\obj\Debug\Modelo.dll
 C:\Users\User\source\repos\Proyecto_final_Pokedex\Modelo\obj\Debug\Modelo.pdb
+C:\Users\User\source\repos\Proyecto_final_Pokedex\Modelo\obj\Debug\Modelo.csproj.AssemblyReference.cache

@@ -39,7 +39,7 @@ namespace Pokedex
             // 
             // pbxPokemon
             // 
-            this.pbxPokemon.Location = new System.Drawing.Point(422, 13);
+            this.pbxPokemon.Location = new System.Drawing.Point(604, 58);
             this.pbxPokemon.Name = "pbxPokemon";
             this.pbxPokemon.Size = new System.Drawing.Size(215, 184);
             this.pbxPokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -49,9 +49,9 @@ namespace Pokedex
             // dgvPokemon
             // 
             this.dgvPokemon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPokemon.Location = new System.Drawing.Point(12, 13);
+            this.dgvPokemon.Location = new System.Drawing.Point(12, 58);
             this.dgvPokemon.Name = "dgvPokemon";
-            this.dgvPokemon.Size = new System.Drawing.Size(383, 184);
+            this.dgvPokemon.Size = new System.Drawing.Size(563, 184);
             this.dgvPokemon.TabIndex = 1;
             this.dgvPokemon.SelectionChanged += new System.EventHandler(this.dgvPokemon_SelectionChanged);
             // 
@@ -71,8 +71,8 @@ namespace Pokedex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
-            this.ClientSize = new System.Drawing.Size(650, 347);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.ClientSize = new System.Drawing.Size(831, 347);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvPokemon);
             this.Controls.Add(this.pbxPokemon);

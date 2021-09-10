@@ -28,13 +28,15 @@ namespace Pokedex
         {
             Pokemon nuevo = new Pokemon();
             PokemonNegocio negocio = new PokemonNegocio();
-
             try
             {
                 nuevo.Numero = (int)numeroPokemon.Value;
-                nuevo.Descripcion = txtDescripcion.Text;
                 nuevo.Nombre = txtNombre.Text;
-                nuevo.UrlImagen = (string)txtUrl.Text;
+                nuevo.Descripcion = txtDescripcion.Text; 
+                nuevo.UrlImagen = txtUrlImagen.Text;
+
+                nuevo.Tipo = (Elemento)cboTipo.SelectedItem;
+                nuevo.Debilidad = (Elemento)cboDebilidad.SelectedItem;
 
                 negocio.Agregar(nuevo);
                 MessageBox.Show("Pokemon agregado exitosamente");
@@ -42,6 +44,21 @@ namespace Pokedex
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void frmPokemon_Load(object sender, EventArgs e)
+        {
+            ElementoNegocio elementoNegocio = new ElementoNegocio();
+            try
+            {
+                cboTipo.DataSource = elementoNegocio.listar();
+                cboDebilidad.DataSource = elementoNegocio.listar(); // acá se tiene que modificar el metodo ToString en Elemento para que aparezcan
+            }
+            catch (Exception ex)
+            {
+
                 MessageBox.Show(ex.ToString());
             }
         }

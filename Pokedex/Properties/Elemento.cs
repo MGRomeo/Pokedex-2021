@@ -16,6 +16,13 @@ namespace modelo
             Id = id;
             Descripcion = descripcion;
         }
+        public Elemento() { }
+
+        public override string ToString()
+        {
+            return Descripcion;
+        }
+
 
     }
 }

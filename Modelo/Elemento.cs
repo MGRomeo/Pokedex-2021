@@ -16,6 +16,12 @@ namespace modelo
             Id = id;
             Descripcion = descripcion;
         }
+        public Elemento(){}
+
+        public override string ToString()  // sobre escribiendo este metodo se muestra como se debe los datos en el cobTipo y Descripcion
+        {
+            return Descripcion;
+        }
 
     }
 }
